@@ -54,4 +54,49 @@ CREATE TABLE IF NOT EXISTS services (
     }
 });
 
+
+connection.query(`
+INSERT INTO services (title, description, category, price, image)
+SELECT * FROM (
+    SELECT
+    'House Cleaning',
+    'Professional home cleaning service',
+    'Cleaning',
+    '499',
+    'https://images.unsplash.com/photo-1581578731548-c64695cc6952'
+) AS temp
+WHERE NOT EXISTS (
+    SELECT title FROM services WHERE title = 'House Cleaning'
+) LIMIT 1;
+`);
+
+connection.query(`
+INSERT INTO services (title, description, category, price, image)
+SELECT * FROM (
+    SELECT
+    'Electrician',
+    'Expert electrical repair and installation',
+    'Electrical',
+    '699',
+    'https://images.unsplash.com/photo-1621905252507-b35492cc74b4'
+) AS temp
+WHERE NOT EXISTS (
+    SELECT title FROM services WHERE title = 'Electrician'
+) LIMIT 1;
+`);
+
+connection.query(`
+INSERT INTO services (title, description, category, price, image)
+SELECT * FROM (
+    SELECT
+    'Plumbing',
+    'Professional plumbing solutions',
+    'Plumbing',
+    '599',
+    'https://images.unsplash.com/photo-1585704032915-c3400ca199e7'
+) AS temp
+WHERE NOT EXISTS (
+    SELECT title FROM services WHERE title = 'Plumbing'
+) LIMIT 1;
+`);
 module.exports = connection;
