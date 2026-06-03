@@ -36,4 +36,22 @@ CREATE TABLE IF NOT EXISTS users (
     }
 });
 
+connection.query(`
+CREATE TABLE IF NOT EXISTS services (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255),
+    description TEXT,
+    category VARCHAR(100),
+    price VARCHAR(50),
+    image VARCHAR(500),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)
+`, (err) => {
+    if (err) {
+        console.log("Services table error:", err);
+    } else {
+        console.log("Services table ready");
+    }
+});
+
 module.exports = connection;
