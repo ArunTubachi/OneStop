@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000";
+const API_URL = "https://onestop-7lsu.onrender.com";
 
 // ==========================
 // LOGIN CHECK
@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
             );
 
             window.location.replace(
-                "worker-dashboard.html"
+                "pages/worker-dashboard.html"
             );
 
         } else {
@@ -424,7 +424,7 @@ function handleProtectedBooking(category, serviceId) {
         );
 
         window.location.replace(
-            "worker-dashboard.html"
+            "pages/worker-dashboard.html"
         );
 
         return;

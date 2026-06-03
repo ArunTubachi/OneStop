@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000";
+const API_URL = "https://onestop-7lsu.onrender.com";
 
 const adminData = JSON.parse(
     localStorage.getItem("loggedInUser")

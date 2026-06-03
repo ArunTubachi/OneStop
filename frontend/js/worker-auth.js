@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000";
+const API_URL = "https://onestop-7lsu.onrender.com";
 
 const workerLoginTab = document.getElementById("workerLoginTab");
 
@@ -81,7 +81,7 @@ workerLoginForm.addEventListener("submit", async (e) => {
                 JSON.stringify(data.worker)
             );
 
-            window.location.href = "worker-dashboard.html";
+            window.location.href = "pages/worker-dashboard.html";
 
         }
     } catch (error) {
