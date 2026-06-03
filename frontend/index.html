@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HomeServe</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg custom-navbar">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="OneStop Logo" class="logo-img">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+
+                <ul class="navbar-nav ms-auto align-items-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active-nav" href="#">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/services.html">
+                            Services
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="dashboardBtn">
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3">
+                        <a href="#" class="btn login-btn" id="loginBtn">
+                            Login
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3">
+                        <a href="#" class="btn book-btn" id="navbarBookBtn">
+                            Book Now
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero-section reveal">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <h1 class="hero-title">
+                        Your Home,
+                        <span>Simplified.</span>
+                    </h1>
+
+                    <p class="hero-text">
+
+                        Professional home services you can trust.
+                        From cleaning to electrical,
+                        we’ve got all your maintenance needs covered.
+
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#" class="btn hero-book-btn" id="heroBookBtn">
+
+                            Book Service
+
+                        </a>
+
+                        <a href="pages/services.html" class="btn hero-service-btn">
+
+                            Explore Services
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="hero-image-wrapper">
+
+                        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop"
+                            class="hero-image" alt="Home Service">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CATEGORIES SECTION -->
+
+    <section class="categories-section reveal">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2 class="section-title">
+                        Categories
+                    </h2>
+
+                    <p class="section-text">
+
+                        Browse our wide range of professional
+                        home services by category.
+
+                    </p>
+
+                </div>
+
+                <a href="pages/services.html" class="view-all-btn">
+
+                    View All Categories
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+            <div class="row g-4 mt-3">
+
+                <div class="col-lg-2 col-md-4 col-6">
+
+                    <div class="category-card">
+
+                        <i class="fa-solid fa-spray-can-sparkles"></i>
+
+                        <h4>Cleaning</h4>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+
+                    <div class="category-card">
+
+                        <i class="fa-solid fa-faucet-drip"></i>
+
+                        <h4>Plumbing</h4>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+
+                    <div class="category-card">
+
+                        <i class="fa-solid fa-bolt"></i>
+
+                        <h4>Electrical</h4>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+
+                    <div class="category-card">
+
+                        <i class="fa-solid fa-paint-roller"></i>
+
+                        <h4>Painting</h4>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+
+                    <div class="category-card">
+
+                        <i class="fa-solid fa-leaf"></i>
+
+                        <h4>Gardening</h4>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+
+                    <div class="category-card">
+
+                        <i class="fa-solid fa-truck"></i>
+
+                        <h4>Moving</h4>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURED SERVICES -->
+
+    <section class="featured-section reveal">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2 class="section-title">
+                        Featured Services
+                    </h2>
+
+                    <p class="section-text">
+
+                        Most popular and highly-rated services.
+
+                    </p>
+
+                </div>
+
+                <a href="pages/services.html" class="view-all-btn">
+
+                    View All Services
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+            <div class="row g-4 mt-4">
+
+                <!-- CARD 1 -->
+
+                <div class="col-lg-4">
+
+                    <div class="service-card">
+
+                        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop"
+                            alt="Cleaning">
+
+                        <div class="service-content">
+
+                            <div class="service-top">
+
+                                <span>Cleaning</span>
+
+                                <h6>
+                                    <i class="fa-solid fa-star"></i>
+                                    4.8
+                                </h6>
+
+                            </div>
+
+                            <h3>
+                                Deep Home Cleaning
+                            </h3>
+
+                            <p>
+                                Thorough cleaning for all rooms,
+                                kitchens and bathrooms.
+                            </p>
+
+                            <div class="service-bottom">
+
+                                <h4>$89</h4>
+
+                                <a href="pages/service-details.html?id=2" class="btn service-btn">
+
+                                    Book Now
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- CARD 2 -->
+
+                <div class="col-lg-4">
+
+                    <div class="service-card">
+
+                        <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?q=80&w=1200&auto=format&fit=crop"
+                            alt="Plumbing">
+
+                        <div class="service-content">
+
+                            <div class="service-top">
+
+                                <span>Plumbing</span>
+
+                                <h6>
+                                    <i class="fa-solid fa-star"></i>
+                                    4.7
+                                </h6>
+
+                            </div>
+
+                            <h3>
+                                Kitchen Pipe Repair
+                            </h3>
+
+                            <p>
+                                Professional repair for leaking
+                                kitchen pipes and sinks.
+                            </p>
+
+                            <div class="service-bottom">
+
+                                <h4>$45</h4>
+
+                                <a href="pages/service-details.html?id=6" class="btn service-btn">
+
+                                    Book Now
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- CARD 3 -->
+
+                <div class="col-lg-4">
+
+                    <div class="service-card">
+
+                        <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=1200&auto=format&fit=crop"
+                            alt="Electrical">
+
+                        <div class="service-content">
+
+                            <div class="service-top">
+
+                                <span>Electrical</span>
+
+                                <h6>
+                                    <i class="fa-solid fa-star"></i>
+                                    4.9
+                                </h6>
+
+                            </div>
+
+                            <h3>
+                                Emergency Electrical Fix
+                            </h3>
+
+                            <p>
+                                Fast repair for wiring,
+                                switches and electrical faults.
+                            </p>
+
+                            <div class="service-bottom">
+
+                                <h4>$60</h4>
+
+                                <a href="pages/service-details.html?id=10" class="btn service-btn">
+
+                                    Book Now
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS -->
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
