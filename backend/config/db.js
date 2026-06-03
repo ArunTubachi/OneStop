@@ -20,3 +20,22 @@ connection.connect((err) => {
 });
 
 module.exports = connection;
+
+const db = require("./config/db");
+
+db.query(`
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    email VARCHAR(255) UNIQUE,
+    phone VARCHAR(20),
+    password VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)
+`, (err) => {
+    if (err) {
+        console.log("Users table error:", err);
+    } else {
+        console.log("Users table ready");
+    }
+});
