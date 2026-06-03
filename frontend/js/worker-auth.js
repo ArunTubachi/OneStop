@@ -81,7 +81,7 @@ workerLoginForm.addEventListener("submit", async (e) => {
                 JSON.stringify(data.worker)
             );
 
-            window.location.href = "pages/worker-dashboard.html";
+            window.location.href = "worker-dashboard.html";
 
         }
     } catch (error) {
