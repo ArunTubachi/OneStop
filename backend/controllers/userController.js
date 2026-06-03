@@ -22,6 +22,8 @@ exports.registerUser = async (req, res) => {
 
                 if (err) {
 
+                    console.error("REGISTER ERROR:", err);
+
                     if (err.code === "ER_DUP_ENTRY") {
 
                         return res.status(400).json({
@@ -31,9 +33,7 @@ exports.registerUser = async (req, res) => {
                     }
 
                     return res.status(500).json({
-
                         message: "User registration failed"
-
                     });
 
                 }
