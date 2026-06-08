@@ -118,12 +118,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (isWorkerLoggedIn()) {
 
-            alert(
-                "Workers cannot access booking services"
-            );
+            alert("Workers cannot access booking services");
 
             window.location.replace(
-                "pages/worker-dashboard.html"
+                `${basePath}worker-dashboard.html`
+            );
+
+        } else if (isLoggedIn()) {
+
+            window.location.replace(
+                `${basePath}services.html`
             );
 
         } else {
