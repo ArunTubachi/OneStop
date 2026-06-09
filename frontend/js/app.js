@@ -272,7 +272,7 @@ if (servicesContainer) {
 
                             <div class="service-bottom">
 
-                                <h4>$${service.price}</h4>
+                                <h4>₹${Number(service.price).toLocaleString('en-IN')}</h4>
 
                                 <a href="service-details.html?id=${service.id}"
                                     class="btn service-btn">
@@ -511,7 +511,7 @@ if (serviceDetails) {
 
                             <h2 class="details-price">
 
-                                $${service.price}
+                                ₹${Number(service.price).toLocaleString('en-IN')}
 
                             </h2>
 
@@ -589,7 +589,7 @@ if (bookingServiceInfo) {
 
                 <div class="booking-price">
 
-                    $${service.price}
+                    ₹${Number(service.price).toLocaleString('en-IN')}
 
                 </div>
 
