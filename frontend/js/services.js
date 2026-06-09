@@ -61,7 +61,7 @@ function displayServices(services) {
 
                     <div class="service-bottom">
 
-                        <h4>$${service.price}</h4>
+                        <h4>₹${service.price}</h4>
 
                         <a href="service-details.html?id=${service.id}" class="btn service-btn">
 
